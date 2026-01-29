@@ -1,0 +1,40 @@
+Feature,Appearances,Direction
+arrest,5,Increases Mortality
+tube,5,Increases Mortality
+shock,5,Increases Mortality
+ascites,5,Increases Mortality
+herniation,5,Increases Mortality
+failure,5,Increases Mortality
+worsening,4,Increases Mortality
+extensive,4,Increases Mortality
+cardiac arrest,4,Increases Mortality
+metastatic,4,Increases Mortality
+subclavian catheter,4,Increases Mortality
+moderate ascites,4,Increases Mortality
+iph,3,Increases Mortality
+rightward,3,Increases Mortality
+cancer,3,Increases Mortality
+limited,3,Increases Mortality
+opacities,3,Increases Mortality
+organ,3,Increases Mortality
+moderate,3,Increases Mortality
+placement,3,Increases Mortality
+been removed,5,Decreases Mortality
+or,5,Decreases Mortality
+normal,5,Decreases Mortality
+the nasogastric,5,Decreases Mortality
+removal,5,Decreases Mortality
+postoperative,4,Decreases Mortality
+unremarkable,4,Decreases Mortality
+no ascites,4,Decreases Mortality
+tiny,4,Decreases Mortality
+chest tube,4,Decreases Mortality
+abscess,4,Decreases Mortality
+cough,3,Decreases Mortality
+is no,3,Decreases Mortality
+extubated,3,Decreases Mortality
+surgery,3,Decreases Mortality
+clear,3,Decreases Mortality
+no,3,Decreases Mortality
+is difficult,3,Decreases Mortality
+mildly,3,Decreases Mortality
