@@ -1,35 +1,33 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
-MIMIC-IV Mortality Prediction using Early Radiology Notes
-==========================================================
-
-Predicts in-hospital mortality using radiology notes from the first 48 hours
-of admission with rigorous evaluation methodology.
-
-Key improvements over discharge note approach:
-- Uses prospective data (first 48h) to avoid data leakage
-- Radiology reports written before outcome is known
-- More clinically actionable for early intervention
+Mortality prediction using clinical features and NLP on MIMIC-IV.
+This script assumes required packages are installed via requirements.txt.
 """
 
 import pandas as pd
 import numpy as np
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import (roc_auc_score, average_precision_score, accuracy_score,
-                            roc_curve, precision_recall_curve, confusion_matrix,
-                            brier_score_loss)
-from sklearn.calibration import calibration_curve
-import matplotlib.pyplot as plt
-import seaborn as sns
-from collections import Counter
 import re
 import warnings
 import pickle
 import argparse
+
 from pathlib import Path
+from collections import Counter
+
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import (
+    roc_auc_score,
+    average_precision_score,
+    accuracy_score,
+    roc_curve,
+    precision_recall_curve,
+    confusion_matrix,
+    brier_score_loss
+)
+from sklearn.calibration import calibration_curve
+
+import matplotlib.pyplot as plt
 
 warnings.filterwarnings('ignore')
 
