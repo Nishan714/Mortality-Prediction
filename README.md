@@ -24,3 +24,8 @@ deployable.
 - Restrict text to early clinical notes (first 24–48 hours)
 - Evaluate transformer-based clinical language models
 - External validation on independent datasets
+
+## Reproducibility
+This code was developed using Python 3.9.
+Install dependencies with:
+pip install -r requirements.txt
